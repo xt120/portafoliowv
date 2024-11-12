@@ -1,0 +1,26 @@
+{
+    "particles": {
+      "number": {
+        "value": 50
+      },
+      "size": {
+        "value": 5
+      },
+      "move": {
+        "speed": 2
+      },
+      "color": {
+        "value": "#6EACDA"
+      },
+      "links": {
+        "enable": true,
+        "color": "#E2E2B6"
+      }
+    },
+    "background": {
+      "color": {
+        "value": "#021526"
+      }
+    }
+  }
+  

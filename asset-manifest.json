@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/portfoliowv/static/css/main.0a697e74.css",
+    "main.js": "/portfoliowv/static/js/main.766c3ac4.js",
+    "static/js/453.32705098.chunk.js": "/portfoliowv/static/js/453.32705098.chunk.js",
+    "static/media/proyecto_1.jpg": "/portfoliowv/static/media/proyecto_1.b1c2fabd435ab90814d5.jpg",
+    "static/media/proyecto_3.png": "/portfoliowv/static/media/proyecto_3.f1e2336f2e0af0a0f900.png",
+    "static/media/proyecto_2.png": "/portfoliowv/static/media/proyecto_2.af93265e948e54c81af6.png",
+    "static/media/gift-mascota.png": "/portfoliowv/static/media/gift-mascota.fa1aff4205d4f06e878e.png",
+    "static/media/Project1_Interconsulta.png": "/portfoliowv/static/media/Project1_Interconsulta.f0eacdd86a041d3e9d4f.png",
+    "static/media/fondo.png": "/portfoliowv/static/media/fondo.df99df56ba19b9e49d04.png",
+    "static/media/logo_b.png": "/portfoliowv/static/media/logo_b.adf6c54a7487bfea8dee.png",
+    "static/media/sql.png": "/portfoliowv/static/media/sql.3accccf270e2cc786bfc.png",
+    "static/media/github-contacto.png": "/portfoliowv/static/media/github-contacto.97a44387f92b2422b428.png",
+    "static/media/linkedin-contacto.png": "/portfoliowv/static/media/linkedin-contacto.255eef4c451a244b875f.png",
+    "static/media/Project1_Datos.png": "/portfoliowv/static/media/Project1_Datos.f5d43acfd08694371904.png",
+    "static/media/proyecto_4.png": "/portfoliowv/static/media/proyecto_4.2e917542e7263c40172d.png",
+    "static/media/python.png": "/portfoliowv/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/x-contacto.png": "/portfoliowv/static/media/x-contacto.15748e6c692306ac427f.png",
+    "static/media/Project1_Procedimiento.png": "/portfoliowv/static/media/Project1_Procedimiento.6681c677124d5fe48e64.png",
+    "static/media/Project1_RegistroNuevo.png": "/portfoliowv/static/media/Project1_RegistroNuevo.3ed4a897abd29b6f3057.png",
+    "static/media/twitter.png": "/portfoliowv/static/media/twitter.7e40f617aaa8eca864bb.png",
+    "static/media/gitlab.png": "/portfoliowv/static/media/gitlab.6d4cbc2644f1b09d8ac4.png",
+    "static/media/github.png": "/portfoliowv/static/media/github.44eee0c4a6c25b0d7347.png",
+    "static/media/kaggle-contacto.png": "/portfoliowv/static/media/kaggle-contacto.2037f29780aac161553f.png",
+    "static/media/html.png": "/portfoliowv/static/media/html.6e930594286d8afe4c79.png",
+    "static/media/Project1_Buscar.png": "/portfoliowv/static/media/Project1_Buscar.fa60fb625cfc491706c4.png",
+    "static/media/email-contacto.png": "/portfoliowv/static/media/email-contacto.a2f2146f929409405da0.png",
+    "static/media/correo.png": "/portfoliowv/static/media/correo.458a303208bcc1a15b6b.png",
+    "static/media/js.png": "/portfoliowv/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/kaggle.png": "/portfoliowv/static/media/kaggle.3170aeaf8d19c87e6de5.png",
+    "index.html": "/portfoliowv/index.html",
+    "main.0a697e74.css.map": "/portfoliowv/static/css/main.0a697e74.css.map",
+    "main.766c3ac4.js.map": "/portfoliowv/static/js/main.766c3ac4.js.map",
+    "453.32705098.chunk.js.map": "/portfoliowv/static/js/453.32705098.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a697e74.css",
+    "static/js/main.766c3ac4.js"
+  ]
+}
