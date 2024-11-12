@@ -1,8 +1,8 @@
 {
-  "name": "introduce",
+  "name": "portfoliowv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xt120.github.io/portfoliowv/",
+  "homepage": "https://xt120.github.io/portfoliowv",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
