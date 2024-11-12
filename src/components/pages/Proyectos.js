@@ -1,4 +1,3 @@
-// Proyectos.js
 import React, { useState, useMemo } from 'react';
 import '../../styles/layout/projects.css';
 import '../../styles/App.css';
@@ -21,7 +20,6 @@ function Proyectos({ setProyectosText, setBgEffect }) {
     const [lockedHex, setLockedHex] = useState(null);
 
 
-    // Lista de proyectos (solo 4)
     const projects = useMemo(() => [
         {
             id: 1,

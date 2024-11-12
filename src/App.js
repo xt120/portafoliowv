@@ -1,7 +1,6 @@
 // Librerias
 import React, { useEffect, useState } from 'react';
-import { Router, Routes, Route, NavLink, useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import 'particles.js';
 
 import './../src/styles/App.css';
@@ -99,7 +98,7 @@ function App() {
     }, []);
 
     return (
-        <>
+        <Router>
             <div id="particles-js"></div>
             <nav className='navbar'>
                 <ul>
@@ -170,57 +169,56 @@ function App() {
                 }}
             >
                 <div style={{ position: 'relative', zIndex: 1 }}>
-                    <Router>
-                        <Routes>
-                            <Route path="/" element={(
-                                <>
-                                    <div className="inicio-container">
-                                        <div className="welcome-text">
-                                            <h1>¡Bienvenido a Mi Portafolio! 🎉</h1>
-                                            <p>
-                                                ¡Hola! Soy Wuendy, una apasionada programadora y especialista en ciencia de datos. 💻 
-                                                Aquí encontrarás una muestra de mis proyectos y habilidades. Me encanta resolver problemas complejos y aprender nuevas tecnologías para ofrecer soluciones creativas e innovadoras. 🚀
-                                            </p>
-                                            <p>
-                                                ¡Espero que disfrutes tu visita y encuentres algo que te inspire! ✨ Si deseas saber más o tienes alguna pregunta, no dudes en contactarme. 📬
-                                            </p>
-                                            <h2>Tecnologías y Herramientas que Uso 🛠️</h2>
+                    <Routes>
+                        <Route path="/" element={(
+                            <>
+                                <div className="inicio-container">
+                                    <div className="welcome-text">
+                                        <h1>¡Bienvenido a Mi Portafolio! 🎉</h1>
+                                        <p>
+                                            ¡Hola! Soy Wuendy, una apasionada programadora y especialista en ciencia de datos. 💻 
+                                            Aquí encontrarás una muestra de mis proyectos y habilidades. Me encanta resolver problemas complejos y aprender nuevas tecnologías para ofrecer soluciones creativas e innovadoras. 🚀
+                                        </p>
+                                        <p>
+                                            ¡Espero que disfrutes tu visita y encuentres algo que te inspire! ✨ Si deseas saber más o tienes alguna pregunta, no dudes en contactarme. 📬
+                                        </p>
+                                        <h2>Tecnologías y Herramientas que Uso 🛠️</h2>
+                                    </div>
+
+                                    <div className="spacing"></div>
+
+                                    <div className="icon-section">
+                                        <div className="icon-item">
+                                            <p className="icon-name">Python</p>
+                                            <img src={logoPython} alt="Python" />
                                         </div>
-
-                                        <div className="spacing"></div>
-
-                                        <div className="icon-section">
-                                            <div className="icon-item">
-                                                <p className="icon-name">Python</p>
-                                                <img src={logoPython} alt="Python" />
-                                            </div>
-                                            <div className="icon-item">
-                                                <p className="icon-name">SQL</p>
-                                                <img src={logoSQL} alt="SQL" />
-                                            </div>
-                                            <div className="icon-item">
-                                                <p className="icon-name">Git</p>
-                                                <img src={logoGit} alt="Git" />
-                                            </div>
-                                            <div className="icon-item">
-                                                <p className="icon-name">HTML</p>
-                                                <img src={logoHTML} alt="HTML" />
-                                            </div>
-                                            <div className="icon-item">
-                                                <p className="icon-name">JavaScript</p>
-                                                <img src={logoJS} alt="JavaScript" />
-                                            </div>
+                                        <div className="icon-item">
+                                            <p className="icon-name">SQL</p>
+                                            <img src={logoSQL} alt="SQL" />
+                                        </div>
+                                        <div className="icon-item">
+                                            <p className="icon-name">Git</p>
+                                            <img src={logoGit} alt="Git" />
+                                        </div>
+                                        <div className="icon-item">
+                                            <p className="icon-name">HTML</p>
+                                            <img src={logoHTML} alt="HTML" />
+                                        </div>
+                                        <div className="icon-item">
+                                            <p className="icon-name">JavaScript</p>
+                                            <img src={logoJS} alt="JavaScript" />
                                         </div>
                                     </div>
-                                </>
-                            )} />
+                                </div>
+                            </>
+                        )} />
 
-                            <Route path="/proyectos" element={<Proyectos setProyectosText={setProyectosText} setBgEffect={setBgEffect} />} />                    
-                            
-                            <Route path="/servicios" element={<Servicios />} />
-                            <Route path="/contacto" element={<Contacto />} />
-                        </Routes>
-                    </Router>
+                        <Route path="/proyectos" element={<Proyectos setProyectosText={setProyectosText} setBgEffect={setBgEffect} />} />                    
+                        
+                        <Route path="/servicios" element={<Servicios />} />
+                        <Route path="/contacto" element={<Contacto />} />
+                    </Routes>
+
                 </div>
                 
             </div>
@@ -252,7 +250,7 @@ function App() {
             <div className="footer-bar">
                 <p>© 2024 Wuendy Velasquez &nbsp; | &nbsp; Creado con React<img src={logoReact} alt="React Logo" className="react-logo" /></p>
             </div>
-        </>
+        </Router>
     );
 }
 
