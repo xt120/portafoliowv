@@ -1,6 +1,8 @@
 // Librerias
 import React, { useEffect, useState } from 'react';
-import { HashRouter as Router, Routes, Route, NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import 'particles.js';
 
 import './../src/styles/App.css';
