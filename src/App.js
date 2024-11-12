@@ -1,6 +1,6 @@
 // Librerias
 import React, { useEffect, useState } from 'react';
-import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import 'particles.js';
@@ -100,7 +100,7 @@ function App() {
     }, []);
 
     return (
-        <Router>
+        <>
             <div id="particles-js"></div>
             <nav className='navbar'>
                 <ul>
@@ -252,7 +252,7 @@ function App() {
             <div className="footer-bar">
                 <p>© 2024 Wuendy Velasquez &nbsp; | &nbsp; Creado con React<img src={logoReact} alt="React Logo" className="react-logo" /></p>
             </div>
-        </Router>
+        </>
     );
 }
 
