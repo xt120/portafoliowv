@@ -1,0 +1,80 @@
+
+
+
+.contacto-container {
+    min-height: 840px;
+    text-align: justify;
+    color: #ffffff;
+    margin-left: 70px;
+    margin-right: 80px;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+
+}
+
+.contacto-container h1 {
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.contacto-container p {
+    font-size: 20px;
+    color: #dadce0;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+.contacto-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.icon-item-contac {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-item-contac p {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.icon-item-contac a {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+.icon-item-contac img {
+    width: 80px; 
+    height: 80px;
+    margin-right: 15px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+.icon-item-contac:hover img {
+    transform: scale(1.2);
+}
+
+.icon-item-contac:hover p {
+    color: #d9b8d3; 
+}
+
+.icon-item-contac a:hover {
+    color: inherit; 
+}

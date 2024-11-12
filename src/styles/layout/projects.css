@@ -1,0 +1,390 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+@property --ripple-factor {
+    syntax: "<number>";
+    initial-value: 0;
+    inherits: true;
+  }
+  
+
+
+@keyframes ripple {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(max(0.8, calc(var(--ripple-factor) / 50)));
+        filter: blur(0.2rem);
+
+    }
+
+    70% {
+        transform: scale(1.2);
+        filter: blur(0.5rem);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.hex-container.show-ripple .hexagon {
+    cursor: default;
+    --duration: 1.45s;
+    animation: ripple var(--duration) ease-in-out;
+    animation-duration: max(var(--duration), calc(var(--duration) * var(--ripple-factor) / 100));
+    animation-delay: calc(var(--ripple-factor) * 8ms); 
+}
+  
+
+.proyectos-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 40px;
+    height: 100%;
+}
+
+.proyectos-intro h1 {
+    font-size: 36px;
+    color: #734c7a;
+    margin-bottom: 30px;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+.proyectos-intro p {
+    font-size: 18px;
+    color: #734c7a;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+.project-tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #734c7a;
+    font-family: 'Press Start 2P', system-ui;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow-y: auto;
+    padding-top: 70px;
+}
+
+
+
+
+
+.big-hexagon {
+    position: relative;
+    width: 800px; 
+    height: 800px; 
+    margin: 0 auto;
+    filter: blur(0.5rem);
+
+    background-color: rgba(255, 255, 255, 0.01); 
+    clip-path: polygon(
+        50% 0.243%, 
+        51.73648% 0.15192%, 
+        53.4202% 0.60307%, 
+        55% 1.33975%, 
+        56.5798% 2.26352%, 
+        58.26352% 3.1202%, 
+
+        
+        62% 5.142%, 
+        89.64102% 21.33975%, 
+        91.06889% 22.33956%, 
+        92.30146% 23.57212%, 
+        93.30127% 25%, 
+        94.03794% 26.5798%, 
+        94.48909% 28.26352%, 
+        94.64102% 30%, 
+        94.64102% 70%, 
+        94.48909% 71.73648%, 
+        94.03794% 73.4202%, 
+        93.30127% 75%, 
+        92.30146% 76.42788%, 
+        91.06889% 77.66044%, 
+        89.64102% 78.66025%, 
+        55% 98.66025%, 
+        53.4202% 99.39693%, 
+        51.73648% 99.84808%, 
+        50% 100%, 
+        48.26352% 99.84808%, 
+        46.5798% 99.39693%, 
+        45% 98.66024%, 
+        10.35898% 78.66025%, 
+        8.93111% 77.66044%, 
+        7.69854% 76.42788%, 
+        6.69873% 75%, 
+        5.96206% 73.4202%, 
+        5.51091% 71.73648%, 
+        5.35898% 70%, 
+        5.35898% 30%, 
+        5.51091% 28.26352%, 
+        5.96206% 26.5798%, 
+        6.69873% 25%, 
+        7.69854% 23.57212%, 
+        8.93111% 22.33956%, 
+        10.35898% 21.33975%, 
+        40% 5%, 
+        45% 2.33975%, 
+        48% 0.84808%
+    );    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(1.2);
+}
+
+
+.hex-container.show-ripple .hexagon {
+    cursor: default;
+    animation: ripple var(--duration) ease-in-out;
+    animation-duration: calc(var(--duration) * var(--ripple-factor) / 100);
+    animation-delay: calc(var(--ripple-factor) * 8ms);
+}
+  
+.hex-container {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
+.hex-column {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 -10px;
+}
+
+
+.hexagon {
+    width: 145px; 
+    height: 135px; 
+    background-color: rgba(255, 255, 255, 0.4);;
+    
+    margin: 1px 15px; 
+    position: relative;
+    clip-path: polygon(
+        98.66024% 45%,
+        99.39693% 46.5798%,
+        99.84808% 48.26352%,
+        100% 50%,
+        99.84808% 51.73648%,
+        99.39693% 53.4202%,
+        98.66025% 55%,
+        78.66025% 89.64102%,
+        77.66044% 91.06889%,
+        76.42788% 92.30146%,
+        75% 93.30127%,
+        73.4202% 94.03794%,
+        71.73648% 94.48909%,
+        70% 94.64102%,
+        30% 94.64102%,
+        28.26352% 94.48909%,
+        26.5798% 94.03794%,
+        25% 93.30127%,
+        23.57212% 92.30146%,
+        22.33956% 91.06889%,
+        21.33975% 89.64102%,
+        1.33975% 55%,
+        0.60307% 53.4202%,
+        0.15192% 51.73648%,
+        0% 50%,
+        0.15192% 48.26352%,
+        0.60307% 46.5798%,
+        1.33975% 45%,
+        21.33975% 10.35898%,
+        22.33956% 8.93111%,
+        23.57212% 7.69854%,
+        25% 6.69873%,
+        26.5798% 5.96206%,
+        28.26352% 5.51091%,
+        30% 5.35898%,
+        70% 5.35898%,
+        71.73648% 5.51091%,
+        73.4202% 5.96206%,
+        75% 6.69873%,
+        76.42788% 7.69854%,
+        77.66044% 8.93111%,
+        78.66025% 10.35898%
+      );
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.5s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.hexagon:not(.clicked) {
+    transform: scale(1);
+    opacity: 0.4;
+}
+
+.hexagon:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+    opacity: 0.8;
+}
+
+.hexagon.clicked {
+    animation: press 0.2s forwards;
+    transform: scale(0.9);
+}
+
+.hexagon.drop {
+    animation: drop 0.5s ease-in-out forwards;
+}
+
+.hexagon-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: inherit;
+    overflow: hidden;
+}
+
+.hexagon-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .big-hexagon {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hexagon {
+        width: 75px;
+        height: 65px;
+        margin: 0px 19px;
+    }
+}
+
+
+.hex-column + .hex-column {
+    margin-left: -40px; 
+}
+
+
+.big-hexagon,
+.hexagon {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    margin-right: 80px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.project-details {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1c1c1c; 
+    color: #dadce0d2;
+    border-radius: 10px;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    
+}
+
+
+.project-details.show {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 10s ease forwards;
+}
+
+.project-details h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+.project-details h2 {
+    color: #ffffff;
+    font-size: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.project-details img {
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+    border-color: #ffffff;
+    display: block;
+    
+}
+
+
+.project-details a {
+    color: #d9b8d3;
+    text-decoration: none;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
